@@ -62,6 +62,6 @@ alias top10='print -l  ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
 #进入相应的路径时只要 cd ~xxx
 hash -d E="/etc/env.d"
 hash -d C="/etc/conf.d"
-hash -d I="/etc/rc.d"
+hash -d I="/etc/init.d"
 hash -d X="/etc/X11"
 #}}}
