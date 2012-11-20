@@ -44,11 +44,15 @@ alias -g ll='ls -l'
 alias -g grep='grep --color=auto'
 
 #压缩
-alias -s gz='tar -xzvf'
-alias -s bz2='tar -xjvf'
+alias -g gz='tar -xzvf'
+alias -g bz2='tar -xjvf'
 
 # command L equivalent to command |less
 alias -g L='|less'
+
+# git alias
+alias -g gs='git status'
+alias -g gad='git add -u'
 
 #[Esc][h] man 当前命令时，显示简短说明 
 alias run-help >&/dev/null && unalias run-help
@@ -64,4 +68,6 @@ hash -d E="/etc/env.d"
 hash -d C="/etc/conf.d"
 hash -d I="/etc/init.d"
 hash -d X="/etc/X11"
+hash -d git="/home/gongbing/workplace/git/"
+hash -d svn="/home/gongbing/workplace/svn/"
 #}}}
