@@ -39,7 +39,7 @@ bindkey "\e\e" sudo-command-line
 alias -g cp='cp -i'
 alias -g mv='mv -i'
 alias -g rm='rm -i'
-alias -g ls='ls -F --color=auto'
+#alias -g ls='ls -F --color=auto'
 alias -g ll='ls -l'
 alias -g grep='grep --color=auto'
 
@@ -49,10 +49,19 @@ alias -g bz2='tar -xjvf'
 
 # command L equivalent to command |less
 alias -g L='|less'
+alias -g ruby+='rvm use 1.9.3'
 
 # git alias
 alias -g gs='git status'
-alias -g gad='git add -u'
+alias -g gd='git add -u'
+alias -g gm='git add -u && git commit -m "MOD"'
+
+alias -g sm='svn ci -m "MOD"'
+
+
+# edit zshrc
+alias -g vzsh='vim ~/.oh-my-zsh/custom/ice.zsh'
+alias -g vim='mvim -v'
 
 #[Esc][h] man 当前命令时，显示简短说明 
 alias run-help >&/dev/null && unalias run-help
@@ -70,4 +79,6 @@ hash -d I="/etc/init.d"
 hash -d X="/etc/X11"
 hash -d git="/home/gongbing/workplace/git/"
 hash -d svn="/home/gongbing/workplace/svn/"
+hash -d ice="/Volumes/ICE/"
+hash -d wd="/Users/ice/dev/work/"
 #}}}
